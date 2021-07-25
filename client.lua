@@ -60,7 +60,7 @@ if Config.CrazyKeybind then
             ClearPedTasks(PlayerPedId())
         end
     end, false)
-    RegisterKeyMapping('+crazypilot', 'Autopilot(Agressive Driving)', 'keyboard', Config.DefaultKey)
+    RegisterKeyMapping('+crazypilot', 'Autopilot(Agressive Driving)', 'keyboard', Config.CrazyKey)
 end
 
 RegisterCommand(Config.StartCommand, function(source, args)
@@ -96,7 +96,7 @@ RegisterCommand(Config.StartCommand, function(source, args)
         
         elseif Config.pNotify then
             exports['pNotify']:SendNotification({text = Config.Translate[2], type = "error", timeout = 2500})
-        elseif Config.MythicNotify
+        elseif Config.MythicNotify then
             exports['mythic_notify']:SendAlert('error', Config.Translate[2], 2500)
         end
     
