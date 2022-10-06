@@ -1,6 +1,8 @@
 Config = {}
 --Provided free on github: https://github.com/WasabiRobby
 
+Config.checkForUpdates = true -- Check for Updates?
+
 Config.NormalSpeed = 25.0 -- Normal Speed
 Config.NormalDrive = 786603 -- Normal Drive Style
 Config.CrazySpeed = 100.0 -- Crazy Speed
@@ -20,8 +22,6 @@ Config.StopCommand = "apstop" -- Command to disable Auto-Pilot
 
 Config.MythicNotify = true --If you use Mythic Notify
 Config.pNotify = false --If you use pNotify
-
-
 
 Config.Translate = {
     [1] = "Autopilot - Activated",
