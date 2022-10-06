@@ -1,5 +1,8 @@
+-----------------For support, scripts, and more----------------
+--------------- https://discord.gg/wasabiscripts  -------------
+---------------------------------------------------------------
+
 Config = {}
---Provided free on github: https://github.com/WasabiRobby
 
 Config.checkForUpdates = true -- Check for Updates?
 

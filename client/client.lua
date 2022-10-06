@@ -1,4 +1,7 @@
---Provided free on github: https://github.com/WasabiRobby
+-----------------For support, scripts, and more----------------
+--------------- https://discord.gg/wasabiscripts  -------------
+---------------------------------------------------------------
+
 local Speed = Config.NormalSpeed
 local Drive = Config.NormalDrive
 local mode = "normal"
