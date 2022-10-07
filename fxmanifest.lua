@@ -12,7 +12,7 @@ description 'Auto Pilot'
 
 author 'wasabirobby'
 
-version '1.10'
+version '1.12'
 
 
 client_scripts {
