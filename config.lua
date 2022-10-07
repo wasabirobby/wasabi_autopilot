@@ -1,5 +1,10 @@
+-----------------For support, scripts, and more----------------
+--------------- https://discord.gg/wasabiscripts  -------------
+---------------------------------------------------------------
+
 Config = {}
---Provided free on github: https://github.com/WasabiRobby
+
+Config.checkForUpdates = true -- Check for Updates?
 
 Config.NormalSpeed = 25.0 -- Normal Speed
 Config.NormalDrive = 786603 -- Normal Drive Style
@@ -21,13 +26,11 @@ Config.StopCommand = "apstop" -- Command to disable Auto-Pilot
 Config.MythicNotify = true --If you use Mythic Notify
 Config.pNotify = false --If you use pNotify
 
-
-
 Config.Translate = {
     [1] = "Autopilot - Activated",
     [2] = "You have not set a waypoint!",
     [3] = "You are not in a vehicle!",
     [4] = "Autopilot - Disabled",
     [5] = "Autopilot Normal - Button Pressed",
-    [6] = "Autopilot Aggressive - Button Pressed",
+    [6] = "Autopilot Aggressive - Button Pressed"
 }
