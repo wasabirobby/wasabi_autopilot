@@ -32,5 +32,5 @@ Config.Translate = {
     [3] = "You are not in a vehicle!",
     [4] = "Autopilot - Disabled",
     [5] = "Autopilot Normal - Button Pressed",
-    [6] = "Autopilot Aggressive - Button Pressed",
+    [6] = "Autopilot Aggressive - Button Pressed"
 }

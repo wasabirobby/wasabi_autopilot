@@ -70,7 +70,6 @@ RegisterCommand(Config.StartCommand, function(source, args)
     local player = PlayerPedId()
 
     if IsPedInAnyVehicle(player) then
-    
         if table.concat(args," ") == Config.NormalCMD then
             mode = "normal"
         end
@@ -90,25 +89,24 @@ RegisterCommand(Config.StartCommand, function(source, args)
             local veh = GetVehiclePedIsIn(player, false)
             TaskVehicleDriveToCoord(player, veh, bCoords, tonumber(Speed), 0, veh, Drive, 0, true)
             SetDriveTaskDrivingStyle(player, Drive)
-           
+
             if Config.MythicNotify then
                 exports['mythic_notify']:SendAlert('success', Config.Translate[1], 2500)
             elseif Config.pNotify then
                 exports['pNotify']:SendNotification({text = Config.Translate[1], type = "success", 2500})
             end
-        
+
         elseif Config.pNotify then
             exports['pNotify']:SendNotification({text = Config.Translate[2], type = "error", timeout = 2500})
         elseif Config.MythicNotify then
             exports['mythic_notify']:SendAlert('error', Config.Translate[2], 2500)
         end
-    
+
     elseif Config.pNotify then
         exports['pNotify']:SendNotification({text = Config.Translate[3], type = "error", timeout = 2500})
     elseif Config.MythicNotify then
         exports['mythic_notify']:SendAlert('error', Config.Translate[3], 2500)
     end
-
 end, false)
 
 RegisterCommand(Config.StopCommand, function(source, args)
@@ -124,5 +122,4 @@ RegisterCommand(Config.StopCommand, function(source, args)
     elseif Config.pNotify then
         exports['pNotify']:SendNotification({text = Config.Translate[3], type = "error", timeout = 2500})
     end
-
 end, false)
