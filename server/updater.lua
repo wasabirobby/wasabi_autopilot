@@ -3,18 +3,18 @@
 ---------------------------------------------------------------
 
 local curVersion = GetResourceMetadata(GetCurrentResourceName(), "version")
-local resourceName = "wasab-autopilot"
+local resourceName = "wasabi_autopilot"
 
 if Config.checkForUpdates then
     CreateThread(function()
         if GetCurrentResourceName() ~= "wasab-autopilot" then
-            resourceName = "wasab-autopilot (" .. GetCurrentResourceName() .. ")"
+            resourceName = "wasabi_autopilot (" .. GetCurrentResourceName() .. ")"
         end
     end)
 
     CreateThread(function()
         while true do
-            PerformHttpRequest("https://api.github.com/repos/wasabirobby/wasab-autopilot/releases/latest", CheckVersion, "GET")
+            PerformHttpRequest("https://api.github.com/repos/wasabirobby/wasabi_autopilot/releases/latest", CheckVersion, "GET")
             Wait(3600000)
         end
     end)
@@ -50,7 +50,7 @@ if Config.checkForUpdates then
                 repoBody = data.body
             else
                 repoVersion = curVersion
-                repoURL = "https://github.com/wasabirobby/wasab-autopilot"
+                repoURL = "https://github.com/wasabirobby/wasabi_autopilot"
             end
         end, "GET")
 
