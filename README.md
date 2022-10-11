@@ -1,11 +1,11 @@
-# wasab-autopilot
+# wasabi_autopilot
 
 Steps to install:
 -----------------
 1. Download Repo
-2. Place 'wasab-autopilot' in server resources
+2. Place 'wasabi_autopilot' in server resources
 3. Edit 'config.lua' and set whichever notification you use to 'true; and the other to 'false' (Mythic Or pNotify)
-4. ensure 'wasab-autopilot in your server.cfg
+4. ensure 'wasabi_autopilot in your server.cfg
 5. Start server :)
 -----------------
 

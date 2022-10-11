@@ -19,12 +19,12 @@ Config.CrazyKey = "o" -- Default keybind to toggle crazy driving autopilot
 Config.StartCommand = "autopilot" -- Command to activate Auto-Pilot
 Config.NormalCMD = "normal" -- Normal driving command argument
 Config.CrazyCMD = "crazy" -- Crazy driving command argument
---Default normal autopilot: /autopilot normal
+-- Default normal autopilot: /autopilot normal
 
 Config.StopCommand = "apstop" -- Command to disable Auto-Pilot
 
-Config.MythicNotify = true --If you use Mythic Notify
-Config.pNotify = false --If you use pNotify
+Config.MythicNotify = true -- If you use Mythic Notify
+Config.pNotify = false -- If you use pNotify
 
 Config.Translate = {
     [1] = "Autopilot - Activated",
